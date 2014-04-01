@@ -3904,6 +3904,12 @@
 		E9940D6914B7A217006465CC /* lfs.c in Sources */ = {isa = PBXBuildFile; fileRef = E9940D6514B7A217006465CC /* lfs.c */; };
 		E9940D6A14B7A217006465CC /* lfs.h in Headers */ = {isa = PBXBuildFile; fileRef = E9940D6714B7A217006465CC /* lfs.h */; };
 		E9940D6B14B7A217006465CC /* lfs.h in Headers */ = {isa = PBXBuildFile; fileRef = E9940D6714B7A217006465CC /* lfs.h */; };
+		F02C136918E2DE0400CD5E76 /* MOAIHtmlMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02C136518E2D72600CD5E76 /* MOAIHtmlMgr.cpp */; };
+		F06EBDE118E2DECE00F3E863 /* MOAIHtmlMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = F02C136618E2D72600CD5E76 /* MOAIHtmlMgr.h */; };
+		F06EBDE818E7C8E000F3E863 /* EMPView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06EBDE618E7C8E000F3E863 /* EMPView.cpp */; };
+		F06EBDE918E7C8E000F3E863 /* EMPView.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDE718E7C8E000F3E863 /* EMPView.h */; };
+		F06EBDEC18E7D94000F3E863 /* EMPViewFactoryIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDEA18E7D94000F3E863 /* EMPViewFactoryIOS.h */; };
+		F06EBDED18E7D94000F3E863 /* EMPViewFactoryIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F06EBDEB18E7D94000F3E863 /* EMPViewFactoryIOS.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -6511,6 +6517,12 @@
 		E98DBD571537A1C500514387 /* libmoai-ios-chartboost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmoai-ios-chartboost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9940D6514B7A217006465CC /* lfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lfs.c; sourceTree = "<group>"; };
 		E9940D6714B7A217006465CC /* lfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfs.h; sourceTree = "<group>"; };
+		F02C136518E2D72600CD5E76 /* MOAIHtmlMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOAIHtmlMgr.cpp; sourceTree = "<group>"; };
+		F02C136618E2D72600CD5E76 /* MOAIHtmlMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAIHtmlMgr.h; sourceTree = "<group>"; };
+		F06EBDE618E7C8E000F3E863 /* EMPView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EMPView.cpp; sourceTree = "<group>"; };
+		F06EBDE718E7C8E000F3E863 /* EMPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPView.h; sourceTree = "<group>"; };
+		F06EBDEA18E7D94000F3E863 /* EMPViewFactoryIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPViewFactoryIOS.h; sourceTree = "<group>"; };
+		F06EBDEB18E7D94000F3E863 /* EMPViewFactoryIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMPViewFactoryIOS.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -8379,6 +8391,10 @@
 				89BE6AF5173975E500DFE837 /* MOAIWeakPtr.h */,
 				89BE6AF6173975E500DFE837 /* pch.cpp */,
 				89BE6AF7173975E500DFE837 /* pch.h */,
+				F02C136518E2D72600CD5E76 /* MOAIHtmlMgr.cpp */,
+				F02C136618E2D72600CD5E76 /* MOAIHtmlMgr.h */,
+				F06EBDE618E7C8E000F3E863 /* EMPView.cpp */,
+				F06EBDE718E7C8E000F3E863 /* EMPView.h */,
 			);
 			path = "moai-core";
 			sourceTree = "<group>";
@@ -8427,6 +8443,8 @@
 		89BE6B911739A05600DFE837 /* moai-iphone */ = {
 			isa = PBXGroup;
 			children = (
+				F06EBDEA18E7D94000F3E863 /* EMPViewFactoryIOS.h */,
+				F06EBDEB18E7D94000F3E863 /* EMPViewFactoryIOS.mm */,
 				4262463617D234BC0053C0CD /* MOAIBrowserIOS.h */,
 				4262463717D234BC0053C0CD /* MOAIBrowserIOS.mm */,
 				89BE6B921739A05600DFE837 /* AKU-adcolony.h */,
@@ -11401,6 +11419,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06EBDE118E2DECE00F3E863 /* MOAIHtmlMgr.h in Headers */,
 				C37D422213B16930009600BB /* BufferedAudioSource.h in Headers */,
 				C37D422413B16930009600BB /* BufferedAudioSourceThread.h in Headers */,
 				C37D422813B16955009600BB /* RScopedLock.h in Headers */,
@@ -11420,6 +11439,7 @@
 				660EBB2A160D1859000B1203 /* PLCrashAsyncImage.h in Headers */,
 				660EBB2C160D1859000B1203 /* PLCrashAsyncSignalInfo.h in Headers */,
 				660EBB2E160D1859000B1203 /* PLCrashFrameWalker_arm.h in Headers */,
+				F06EBDE918E7C8E000F3E863 /* EMPView.h in Headers */,
 				660EBB30160D1859000B1203 /* PLCrashFrameWalker_i386.h in Headers */,
 				660EBB32160D1859000B1203 /* PLCrashFrameWalker_ppc.h in Headers */,
 				660EBB34160D1859000B1203 /* PLCrashFrameWalker_x86_64.h in Headers */,
@@ -11536,6 +11556,7 @@
 				89BE6D661739A42500DFE837 /* pch.h in Headers */,
 				89E9D7881743F7EE00033CDD /* MOAIVersion.h in Headers */,
 				89E9D7A81745223E00033CDD /* MOAIScopedLuaState.h in Headers */,
+				F06EBDEC18E7D94000F3E863 /* EMPViewFactoryIOS.h in Headers */,
 				4262463817D234BC0053C0CD /* MOAIBrowserIOS.h in Headers */,
 				C555156617D6216B00AA324C /* MOAIVecPathGraph.h in Headers */,
 			);
@@ -14762,12 +14783,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02C136918E2DE0400CD5E76 /* MOAIHtmlMgr.cpp in Sources */,
 				669C056D155DB5D500A5CE7F /* fullluasocket.c in Sources */,
 				669C0571155DB5D500A5CE7F /* luasocketscripts.c in Sources */,
 				8942B01C1731BB90009E233E /* SFMT.c in Sources */,
 				89BE6AFA173975E500DFE837 /* host.cpp in Sources */,
 				89BE6AFE173975E500DFE837 /* MOAICanary.cpp in Sources */,
 				89BE6B02173975E500DFE837 /* MOAIDeserializer.cpp in Sources */,
+				F06EBDE818E7C8E000F3E863 /* EMPView.cpp in Sources */,
 				89BE6B06173975E500DFE837 /* MOAIEventSource.cpp in Sources */,
 				89BE6B0A173975E500DFE837 /* MOAIFoo.cpp in Sources */,
 				89BE6B0E173975E500DFE837 /* MOAIFooMgr.cpp in Sources */,
@@ -14836,6 +14859,7 @@
 				89BE6D641739A42500DFE837 /* pch.cpp in Sources */,
 				89E9D7861743F7EE00033CDD /* MOAIVersion.cpp in Sources */,
 				89E9D7A61745223E00033CDD /* MOAIScopedLuaState.cpp in Sources */,
+				F06EBDED18E7D94000F3E863 /* EMPViewFactoryIOS.mm in Sources */,
 				4262463917D234BC0053C0CD /* MOAIBrowserIOS.mm in Sources */,
 				C555156417D6216B00AA324C /* MOAIVecPathGraph.cpp in Sources */,
 			);

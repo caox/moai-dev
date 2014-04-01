@@ -1,6 +1,8 @@
 // Copyright (c) 2010-2011 Zipline Games, Inc. All Rights Reserved.
 // http://getmoai.com
 
+
+#import <moai-iphone/EMPViewFactoryIOS.h>
 #import <moai-iphone/MOAIAdColonyIOS.h>
 #import <moai-iphone/MOAIAppIOS.h>
 #import <moai-iphone/MOAIBillingIOS.h>

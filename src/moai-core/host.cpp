@@ -95,6 +95,7 @@ AKUContextID AKUCreateContext () {
 
 	MOAILuaRuntime::Affirm ();
 	MOAILogMgr::Affirm ();
+	MOAIHtmlMgr::Affirm ();
 	
 	MOAILuaRuntime& luaRuntime = MOAILuaRuntime::Get ();
 	luaRuntime.Open ();
@@ -104,6 +105,7 @@ AKUContextID AKUCreateContext () {
 	
 	REGISTER_LUA_CLASS ( MOAIDeserializer )
 	REGISTER_LUA_CLASS ( MOAILogMgr )
+	REGISTER_LUA_CLASS ( MOAIHtmlMgr )
 	REGISTER_LUA_CLASS ( MOAISerializer )
 
 	return sContextIDCounter;

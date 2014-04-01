@@ -11,12 +11,20 @@
 #import <moai-core/headers.h>
 
 
-class EMPViewFactoryIOS {
+class EMPViewFactoryIOS :public MOAIGlobalClass < EMPViewFactoryIOS, MOAILuaObject > {
 private:
-
 	
+	//----------------------------------------------------------------//
+	static int test(lua_State* L );
 public:
-	static void render(const EMPView&);
+	
+	DECL_LUA_SINGLETON ( EMPViewFactoryIOS )
+	
+	//----------------------------------------------------------------//
+	EMPViewFactoryIOS			();
+	~EMPViewFactoryIOS			();
+	void			RegisterLuaClass	( MOAILuaState& state );
+	static void renderView(const EMPView&);
 	
 };
 
