@@ -12,6 +12,8 @@
 #include <iostream>
 #include <vector>
 #include <ext/hash_map>
+#include <moai-core/headers.h>
+class EMPViewImpl;
 
 using namespace std;
 using namespace __gnu_cxx;
@@ -27,7 +29,7 @@ namespace __gnu_cxx {
 
 typedef hash_map<string, string> css_map;
 
-class EMPView{
+class EMPView: public MOAIGlobalClass < EMPView, MOAILuaObject > {
 	
 public:
 	
@@ -53,8 +55,15 @@ public:
 	EMPView * getParent() const ;
 	ViewType getViewType() const {return type;}
 	Layout getLayout() const {return layout;}
+	void draw();
+	
+	DECL_LUA_FACTORY ( EMPView )
+	SET(EMPViewImpl*, ViewImpl, mViewImpl)
+	void			RegisterLuaFuncs	( MOAILuaState& state );
+	
 	
 private:
+	
 	float x;
 	float y;
 	float width;
@@ -62,6 +71,10 @@ private:
 	ViewType type;
 	Layout layout;
 	std::vector<EMPView *> child;
+	EMPViewImpl * mViewImpl;
+	
+	static int		_getCssStyles		( lua_State* L );
+	static int      _getCssStyleByName  ( lua_State* L );
 	
 };
 

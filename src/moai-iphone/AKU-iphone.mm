@@ -77,9 +77,10 @@ void AKUIphoneInit ( UIApplication* application ) {
 	loadMoaiLib_NSString ();
 
 	MOAIAppIOS::Affirm ().SetApplication ( application );
-			
+	EMPHtmlIOS::Affirm();
+	EMPDocument::Affirm().SetFactory(EMPHtmlIOS::Get().GetFactory());
 	// MOAI
-	REGISTER_LUA_CLASS ( EMPViewFactoryIOS )
+	REGISTER_LUA_CLASS ( EMPHtmlIOS )
 	REGISTER_LUA_CLASS ( MOAIAppIOS )
 	REGISTER_LUA_CLASS ( MOAIBillingIOS )
 	REGISTER_LUA_CLASS ( MOAIDialogIOS )

@@ -23,6 +23,7 @@ prop = MOAIProp2D.new ()
 prop:setDeck ( tileLib )
 layer:insertProp ( prop )
 
+EMPHtmlIOS:render()
 curve = MOAIAnimCurve.new ()
 
 curve:reserveKeys ( 9 )

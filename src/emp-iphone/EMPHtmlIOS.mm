@@ -1,60 +1,54 @@
 //
-//  EMPView.mm
+//  EMPHtmlIOS.cpp
 //  libmoai
 //
-//  Created by cao xu on 14-3-30.
+//  Created by cao xu on 14-4-2.
 //
 //
 
-#import "EMPViewFactoryIOS.h"
+#include "EMPHtmlIOS.h"
 
 
-void  EMPViewFactoryIOS::renderView(const EMPView& rootView) {
+int EMPHtmlIOS::test(lua_State* L ){
+	UNUSED ( L );
 	UIWindow* window = [[ UIApplication sharedApplication ] keyWindow ];
 	UIViewController* rootVC = [ window rootViewController ];
 	
-	if(rootView.getViewType() == EMPView::BUTTON){
-		printf ( "A single button!\n" );
-		UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		button.frame = CGRectMake(221, 81, 54, 30);
-		[button setTitle:@"前往" forState:UIControlStateNormal];
-		[rootVC.view addSubview:button ];
-	}
-}
-int EMPViewFactoryIOS::test(lua_State* L ){
-	UNUSED ( L );
 	
 	printf ( "EMP factory singleton foo!\n" );
-	EMPView * view = new EMPView();
-	view->setViewType(EMPView::BUTTON);
-	renderView(*view);
+	string xml = "<div><label> this is a test</label></div>";
+	EMPDocument::Get().render(xml, (void *) rootVC.view);
+	
 	return 0;
 }
 
 
 //================================================================//
-// EMPViewFactoryIOS
+// EMPHtmlIOS
 //================================================================//
 
 //----------------------------------------------------------------//
-EMPViewFactoryIOS::EMPViewFactoryIOS () {
+EMPHtmlIOS::EMPHtmlIOS () {
 	
-	// register all classes EMPViewFactoryIOS derives from
+	// register all classes EMPHtmlIOS derives from
 	// we need this for custom RTTI implementation
 	RTTI_BEGIN
 	RTTI_EXTEND ( MOAILuaObject )
 	
+	factory = new EMPViewFactoryIOS();
+	
 	// and any other objects from multiple inheritance...
-	// RTTI_EXTEND ( EMPViewFactoryIOSBase )
+	// RTTI_EXTEND ( EMPHtmlIOSBase )
 	RTTI_END
 }
 
 //----------------------------------------------------------------//
-EMPViewFactoryIOS::~EMPViewFactoryIOS () {
+EMPHtmlIOS::~EMPHtmlIOS () {
+	delete factory;
 }
 
 //----------------------------------------------------------------//
-void EMPViewFactoryIOS::RegisterLuaClass ( MOAILuaState& state ) {
+void EMPHtmlIOS::RegisterLuaClass ( MOAILuaState& state ) {
 	
 	// call any initializers for base classes here:
 	// MOAIFooBase::RegisterLuaClass ( state );
@@ -64,7 +58,7 @@ void EMPViewFactoryIOS::RegisterLuaClass ( MOAILuaState& state ) {
 	
 	// here are the class methods:
 	luaL_Reg regTable [] = {
-		{ "renderHtml",		test },
+		{ "render",		test },
 		{ NULL, NULL }
 	};
 	

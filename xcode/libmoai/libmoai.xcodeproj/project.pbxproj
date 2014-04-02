@@ -3904,12 +3904,31 @@
 		E9940D6914B7A217006465CC /* lfs.c in Sources */ = {isa = PBXBuildFile; fileRef = E9940D6514B7A217006465CC /* lfs.c */; };
 		E9940D6A14B7A217006465CC /* lfs.h in Headers */ = {isa = PBXBuildFile; fileRef = E9940D6714B7A217006465CC /* lfs.h */; };
 		E9940D6B14B7A217006465CC /* lfs.h in Headers */ = {isa = PBXBuildFile; fileRef = E9940D6714B7A217006465CC /* lfs.h */; };
+		F02A02C718EAA039001D33B4 /* EMPButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02A02BC18EAA039001D33B4 /* EMPButton.cpp */; };
+		F02A02C818EAA039001D33B4 /* EMPButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02BD18EAA039001D33B4 /* EMPButton.h */; };
+		F02A02C918EAA039001D33B4 /* EMPComposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02A02BE18EAA039001D33B4 /* EMPComposite.cpp */; };
+		F02A02CA18EAA039001D33B4 /* EMPComposite.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02BF18EAA039001D33B4 /* EMPComposite.h */; };
+		F02A02CB18EAA039001D33B4 /* EMPControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02A02C018EAA039001D33B4 /* EMPControl.cpp */; };
+		F02A02CC18EAA039001D33B4 /* EMPControl.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02C118EAA039001D33B4 /* EMPControl.h */; };
+		F02A02CD18EAA039001D33B4 /* EMPDivComposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02A02C218EAA039001D33B4 /* EMPDivComposite.cpp */; };
+		F02A02CE18EAA039001D33B4 /* EMPDivComposite.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02C318EAA039001D33B4 /* EMPDivComposite.h */; };
+		F02A02CF18EAA039001D33B4 /* EMPDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02A02C418EAA039001D33B4 /* EMPDocument.cpp */; };
+		F02A02D018EAA039001D33B4 /* EMPDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02C518EAA039001D33B4 /* EMPDocument.h */; };
+		F02A02D118EAA039001D33B4 /* EMPViewImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02A02C618EAA039001D33B4 /* EMPViewImpl.cpp */; };
+		F02A02D318EAA1FD001D33B4 /* EMPViewImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02D218EAA1FD001D33B4 /* EMPViewImpl.h */; };
+		F02A02D618EBB2C3001D33B4 /* EMPViewFactoryIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02D418EBB2C3001D33B4 /* EMPViewFactoryIOS.h */; };
+		F02A02D718EBB2C3001D33B4 /* EMPViewFactoryIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F02A02D518EBB2C3001D33B4 /* EMPViewFactoryIOS.mm */; };
+		F02A02DF18EBC8FA001D33B4 /* EMPButtonImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F02A02DD18EBC8FA001D33B4 /* EMPButtonImpl.mm */; };
+		F02A02E018EBC8FA001D33B4 /* EMPButtonImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A02DE18EBC8FA001D33B4 /* EMPButtonImpl.h */; };
+		F02A0B8618EBCAF9001D33B4 /* EMPLabelImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = F02A0B8418EBCAF9001D33B4 /* EMPLabelImpl.mm */; };
+		F02A0B8718EBCAF9001D33B4 /* EMPLabelImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A0B8518EBCAF9001D33B4 /* EMPLabelImpl.h */; };
+		F02A0B8C18EC5670001D33B4 /* EMPHtmlIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F02A0B8A18EC5670001D33B4 /* EMPHtmlIOS.mm */; };
+		F02A0B8D18EC5670001D33B4 /* EMPHtmlIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F02A0B8B18EC5670001D33B4 /* EMPHtmlIOS.h */; };
 		F02C136918E2DE0400CD5E76 /* MOAIHtmlMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F02C136518E2D72600CD5E76 /* MOAIHtmlMgr.cpp */; };
 		F06EBDE118E2DECE00F3E863 /* MOAIHtmlMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = F02C136618E2D72600CD5E76 /* MOAIHtmlMgr.h */; };
-		F06EBDE818E7C8E000F3E863 /* EMPView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06EBDE618E7C8E000F3E863 /* EMPView.cpp */; };
-		F06EBDE918E7C8E000F3E863 /* EMPView.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDE718E7C8E000F3E863 /* EMPView.h */; };
-		F06EBDEC18E7D94000F3E863 /* EMPViewFactoryIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDEA18E7D94000F3E863 /* EMPViewFactoryIOS.h */; };
-		F06EBDED18E7D94000F3E863 /* EMPViewFactoryIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F06EBDEB18E7D94000F3E863 /* EMPViewFactoryIOS.mm */; };
+		F06EBDF118EA72A600F3E863 /* EMPView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06EBDEF18EA72A600F3E863 /* EMPView.cpp */; };
+		F06EBDF218EA72A600F3E863 /* EMPView.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDF018EA72A600F3E863 /* EMPView.h */; };
+		F06EBDF418EA72D600F3E863 /* headers.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDF318EA72D600F3E863 /* headers.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -6517,12 +6536,32 @@
 		E98DBD571537A1C500514387 /* libmoai-ios-chartboost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmoai-ios-chartboost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9940D6514B7A217006465CC /* lfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lfs.c; sourceTree = "<group>"; };
 		E9940D6714B7A217006465CC /* lfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfs.h; sourceTree = "<group>"; };
+		F02A02BC18EAA039001D33B4 /* EMPButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPButton.cpp; path = "emp-html/EMPButton.cpp"; sourceTree = "<group>"; };
+		F02A02BD18EAA039001D33B4 /* EMPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPButton.h; path = "emp-html/EMPButton.h"; sourceTree = "<group>"; };
+		F02A02BE18EAA039001D33B4 /* EMPComposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPComposite.cpp; path = "emp-html/EMPComposite.cpp"; sourceTree = "<group>"; };
+		F02A02BF18EAA039001D33B4 /* EMPComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPComposite.h; path = "emp-html/EMPComposite.h"; sourceTree = "<group>"; };
+		F02A02C018EAA039001D33B4 /* EMPControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPControl.cpp; path = "emp-html/EMPControl.cpp"; sourceTree = "<group>"; };
+		F02A02C118EAA039001D33B4 /* EMPControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPControl.h; path = "emp-html/EMPControl.h"; sourceTree = "<group>"; };
+		F02A02C218EAA039001D33B4 /* EMPDivComposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPDivComposite.cpp; path = "emp-html/EMPDivComposite.cpp"; sourceTree = "<group>"; };
+		F02A02C318EAA039001D33B4 /* EMPDivComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPDivComposite.h; path = "emp-html/EMPDivComposite.h"; sourceTree = "<group>"; };
+		F02A02C418EAA039001D33B4 /* EMPDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPDocument.cpp; path = "emp-html/EMPDocument.cpp"; sourceTree = "<group>"; };
+		F02A02C518EAA039001D33B4 /* EMPDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPDocument.h; path = "emp-html/EMPDocument.h"; sourceTree = "<group>"; };
+		F02A02C618EAA039001D33B4 /* EMPViewImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPViewImpl.cpp; path = "emp-html/EMPViewImpl.cpp"; sourceTree = "<group>"; };
+		F02A02D218EAA1FD001D33B4 /* EMPViewImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPViewImpl.h; path = "emp-html/EMPViewImpl.h"; sourceTree = "<group>"; };
+		F02A02D418EBB2C3001D33B4 /* EMPViewFactoryIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPViewFactoryIOS.h; path = "emp-iphone/EMPViewFactoryIOS.h"; sourceTree = "<group>"; };
+		F02A02D518EBB2C3001D33B4 /* EMPViewFactoryIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EMPViewFactoryIOS.mm; path = "emp-iphone/EMPViewFactoryIOS.mm"; sourceTree = "<group>"; };
+		F02A02DD18EBC8FA001D33B4 /* EMPButtonImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EMPButtonImpl.mm; path = "emp-iphone/EMPButtonImpl.mm"; sourceTree = "<group>"; };
+		F02A02DE18EBC8FA001D33B4 /* EMPButtonImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPButtonImpl.h; path = "emp-iphone/EMPButtonImpl.h"; sourceTree = "<group>"; };
+		F02A0B8418EBCAF9001D33B4 /* EMPLabelImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EMPLabelImpl.mm; path = "emp-iphone/EMPLabelImpl.mm"; sourceTree = "<group>"; };
+		F02A0B8518EBCAF9001D33B4 /* EMPLabelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPLabelImpl.h; path = "emp-iphone/EMPLabelImpl.h"; sourceTree = "<group>"; };
+		F02A0B8918EBCBC7001D33B4 /* EMPViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EMPViewFactory.h; path = "emp-html/EMPViewFactory.h"; sourceTree = "<group>"; };
+		F02A0B8A18EC5670001D33B4 /* EMPHtmlIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EMPHtmlIOS.mm; path = "emp-iphone/EMPHtmlIOS.mm"; sourceTree = "<group>"; };
+		F02A0B8B18EC5670001D33B4 /* EMPHtmlIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPHtmlIOS.h; path = "emp-iphone/EMPHtmlIOS.h"; sourceTree = "<group>"; };
 		F02C136518E2D72600CD5E76 /* MOAIHtmlMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOAIHtmlMgr.cpp; sourceTree = "<group>"; };
 		F02C136618E2D72600CD5E76 /* MOAIHtmlMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOAIHtmlMgr.h; sourceTree = "<group>"; };
-		F06EBDE618E7C8E000F3E863 /* EMPView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EMPView.cpp; sourceTree = "<group>"; };
-		F06EBDE718E7C8E000F3E863 /* EMPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPView.h; sourceTree = "<group>"; };
-		F06EBDEA18E7D94000F3E863 /* EMPViewFactoryIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPViewFactoryIOS.h; sourceTree = "<group>"; };
-		F06EBDEB18E7D94000F3E863 /* EMPViewFactoryIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMPViewFactoryIOS.mm; sourceTree = "<group>"; };
+		F06EBDEF18EA72A600F3E863 /* EMPView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPView.cpp; path = "emp-html/EMPView.cpp"; sourceTree = "<group>"; };
+		F06EBDF018EA72A600F3E863 /* EMPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMPView.h; path = "emp-html/EMPView.h"; sourceTree = "<group>"; };
+		F06EBDF318EA72D600F3E863 /* headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = headers.h; path = "emp-html/headers.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -7391,6 +7430,8 @@
 		0324E4F113564BC7000ADC60 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F02A02D818EBB2CE001D33B4 /* emp-iphone */,
+				F06EBDEE18EA71D300F3E863 /* emp-html */,
 				89BE6B521739760900DFE837 /* moai-audiosampler */,
 				89BE74A2173AD2FA00DFE837 /* moai-box2d */,
 				89BE7577173C11D200DFE837 /* moai-chipmunk */,
@@ -8393,8 +8434,6 @@
 				89BE6AF7173975E500DFE837 /* pch.h */,
 				F02C136518E2D72600CD5E76 /* MOAIHtmlMgr.cpp */,
 				F02C136618E2D72600CD5E76 /* MOAIHtmlMgr.h */,
-				F06EBDE618E7C8E000F3E863 /* EMPView.cpp */,
-				F06EBDE718E7C8E000F3E863 /* EMPView.h */,
 			);
 			path = "moai-core";
 			sourceTree = "<group>";
@@ -8443,8 +8482,6 @@
 		89BE6B911739A05600DFE837 /* moai-iphone */ = {
 			isa = PBXGroup;
 			children = (
-				F06EBDEA18E7D94000F3E863 /* EMPViewFactoryIOS.h */,
-				F06EBDEB18E7D94000F3E863 /* EMPViewFactoryIOS.mm */,
 				4262463617D234BC0053C0CD /* MOAIBrowserIOS.h */,
 				4262463717D234BC0053C0CD /* MOAIBrowserIOS.mm */,
 				89BE6B921739A05600DFE837 /* AKU-adcolony.h */,
@@ -10686,6 +10723,44 @@
 			path = "../../3rdparty/luafilesystem-1.5.0/src";
 			sourceTree = "<group>";
 		};
+		F02A02D818EBB2CE001D33B4 /* emp-iphone */ = {
+			isa = PBXGroup;
+			children = (
+				F02A0B8418EBCAF9001D33B4 /* EMPLabelImpl.mm */,
+				F02A0B8518EBCAF9001D33B4 /* EMPLabelImpl.h */,
+				F02A02D418EBB2C3001D33B4 /* EMPViewFactoryIOS.h */,
+				F02A02D518EBB2C3001D33B4 /* EMPViewFactoryIOS.mm */,
+				F02A02DD18EBC8FA001D33B4 /* EMPButtonImpl.mm */,
+				F02A02DE18EBC8FA001D33B4 /* EMPButtonImpl.h */,
+				F02A0B8A18EC5670001D33B4 /* EMPHtmlIOS.mm */,
+				F02A0B8B18EC5670001D33B4 /* EMPHtmlIOS.h */,
+			);
+			name = "emp-iphone";
+			sourceTree = "<group>";
+		};
+		F06EBDEE18EA71D300F3E863 /* emp-html */ = {
+			isa = PBXGroup;
+			children = (
+				F02A02BC18EAA039001D33B4 /* EMPButton.cpp */,
+				F02A02BD18EAA039001D33B4 /* EMPButton.h */,
+				F02A02BE18EAA039001D33B4 /* EMPComposite.cpp */,
+				F02A02BF18EAA039001D33B4 /* EMPComposite.h */,
+				F02A02C018EAA039001D33B4 /* EMPControl.cpp */,
+				F02A02C118EAA039001D33B4 /* EMPControl.h */,
+				F02A02C218EAA039001D33B4 /* EMPDivComposite.cpp */,
+				F02A02C318EAA039001D33B4 /* EMPDivComposite.h */,
+				F02A02C418EAA039001D33B4 /* EMPDocument.cpp */,
+				F02A02C518EAA039001D33B4 /* EMPDocument.h */,
+				F06EBDEF18EA72A600F3E863 /* EMPView.cpp */,
+				F06EBDF018EA72A600F3E863 /* EMPView.h */,
+				F02A02C618EAA039001D33B4 /* EMPViewImpl.cpp */,
+				F02A02D218EAA1FD001D33B4 /* EMPViewImpl.h */,
+				F06EBDF318EA72D600F3E863 /* headers.h */,
+				F02A0B8918EBCBC7001D33B4 /* EMPViewFactory.h */,
+			);
+			name = "emp-html";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -11421,6 +11496,7 @@
 			files = (
 				F06EBDE118E2DECE00F3E863 /* MOAIHtmlMgr.h in Headers */,
 				C37D422213B16930009600BB /* BufferedAudioSource.h in Headers */,
+				F02A02D318EAA1FD001D33B4 /* EMPViewImpl.h in Headers */,
 				C37D422413B16930009600BB /* BufferedAudioSourceThread.h in Headers */,
 				C37D422813B16955009600BB /* RScopedLock.h in Headers */,
 				C37D422913B16955009600BB /* RSyncEvent.h in Headers */,
@@ -11439,11 +11515,13 @@
 				660EBB2A160D1859000B1203 /* PLCrashAsyncImage.h in Headers */,
 				660EBB2C160D1859000B1203 /* PLCrashAsyncSignalInfo.h in Headers */,
 				660EBB2E160D1859000B1203 /* PLCrashFrameWalker_arm.h in Headers */,
-				F06EBDE918E7C8E000F3E863 /* EMPView.h in Headers */,
+				F06EBDF218EA72A600F3E863 /* EMPView.h in Headers */,
 				660EBB30160D1859000B1203 /* PLCrashFrameWalker_i386.h in Headers */,
 				660EBB32160D1859000B1203 /* PLCrashFrameWalker_ppc.h in Headers */,
+				F02A02E018EBC8FA001D33B4 /* EMPButtonImpl.h in Headers */,
 				660EBB34160D1859000B1203 /* PLCrashFrameWalker_x86_64.h in Headers */,
 				660EBB36160D1859000B1203 /* PLCrashFrameWalker.h in Headers */,
+				F02A02C818EAA039001D33B4 /* EMPButton.h in Headers */,
 				660EBB38160D1859000B1203 /* PLCrashLogWriter.h in Headers */,
 				660EBB3A160D1859000B1203 /* PLCrashLogWriterEncoding.h in Headers */,
 				660EBB3C160D1859000B1203 /* PLCrashReport.h in Headers */,
@@ -11471,6 +11549,7 @@
 				8942B00E1731BB90009E233E /* SFMT-params11213.h in Headers */,
 				8942B0101731BB90009E233E /* SFMT-params19937.h in Headers */,
 				8942B0121731BB90009E233E /* SFMT-params44497.h in Headers */,
+				F02A02CC18EAA039001D33B4 /* EMPControl.h in Headers */,
 				8942B0141731BB90009E233E /* SFMT-params86243.h in Headers */,
 				8942B0161731BB90009E233E /* SFMT-params132049.h in Headers */,
 				8942B0181731BB90009E233E /* SFMT-params216091.h in Headers */,
@@ -11479,6 +11558,7 @@
 				89BE6AF8173975E500DFE837 /* headers.h in Headers */,
 				89BE6AFC173975E500DFE837 /* host.h in Headers */,
 				89BE6B00173975E500DFE837 /* MOAICanary.h in Headers */,
+				F02A0B8D18EC5670001D33B4 /* EMPHtmlIOS.h in Headers */,
 				89BE6B04173975E500DFE837 /* MOAIDeserializer.h in Headers */,
 				89BE6B08173975E500DFE837 /* MOAIEventSource.h in Headers */,
 				89BE6B0C173975E500DFE837 /* MOAIFoo.h in Headers */,
@@ -11495,7 +11575,9 @@
 				89BE6B30173975E500DFE837 /* MOAILuaState-impl.h in Headers */,
 				89BE6B34173975E500DFE837 /* MOAILuaState.h in Headers */,
 				89BE6B3C173975E500DFE837 /* MOAIObject.h in Headers */,
+				F02A02D018EAA039001D33B4 /* EMPDocument.h in Headers */,
 				89BE6B40173975E500DFE837 /* MOAIRtti.h in Headers */,
+				F02A02D618EBB2C3001D33B4 /* EMPViewFactoryIOS.h in Headers */,
 				89BE6B44173975E500DFE837 /* MOAISerializer.h in Headers */,
 				89BE6B48173975E500DFE837 /* MOAISerializerBase.h in Headers */,
 				89BE6B4A173975E500DFE837 /* MOAISharedPtr.h in Headers */,
@@ -11537,6 +11619,7 @@
 				89BE6D1A1739A42500DFE837 /* MOAIJsonParser.h in Headers */,
 				89BE6D1E1739A42500DFE837 /* MOAIMath.h in Headers */,
 				89BE6D221739A42500DFE837 /* MOAIMemStream.h in Headers */,
+				F02A02CA18EAA039001D33B4 /* EMPComposite.h in Headers */,
 				89BE6D261739A42500DFE837 /* MOAIMutex.h in Headers */,
 				89BE6D2A1739A42500DFE837 /* MOAIMutex_posix.h in Headers */,
 				89BE6D2E1739A42500DFE837 /* MOAIMutex_win32.h in Headers */,
@@ -11548,6 +11631,7 @@
 				89BE6D461739A42500DFE837 /* MOAITaskQueue.h in Headers */,
 				89BE6D4A1739A42500DFE837 /* MOAITaskSubscriber.h in Headers */,
 				89BE6D4E1739A42500DFE837 /* MOAITaskThread.h in Headers */,
+				F06EBDF418EA72D600F3E863 /* headers.h in Headers */,
 				89BE6D521739A42500DFE837 /* MOAIThread.h in Headers */,
 				89BE6D561739A42500DFE837 /* MOAIThread_posix.h in Headers */,
 				89BE6D5A1739A42500DFE837 /* MOAIThread_win32.h in Headers */,
@@ -11556,7 +11640,8 @@
 				89BE6D661739A42500DFE837 /* pch.h in Headers */,
 				89E9D7881743F7EE00033CDD /* MOAIVersion.h in Headers */,
 				89E9D7A81745223E00033CDD /* MOAIScopedLuaState.h in Headers */,
-				F06EBDEC18E7D94000F3E863 /* EMPViewFactoryIOS.h in Headers */,
+				F02A02CE18EAA039001D33B4 /* EMPDivComposite.h in Headers */,
+				F02A0B8718EBCAF9001D33B4 /* EMPLabelImpl.h in Headers */,
 				4262463817D234BC0053C0CD /* MOAIBrowserIOS.h in Headers */,
 				C555156617D6216B00AA324C /* MOAIVecPathGraph.h in Headers */,
 			);
@@ -14790,7 +14875,7 @@
 				89BE6AFA173975E500DFE837 /* host.cpp in Sources */,
 				89BE6AFE173975E500DFE837 /* MOAICanary.cpp in Sources */,
 				89BE6B02173975E500DFE837 /* MOAIDeserializer.cpp in Sources */,
-				F06EBDE818E7C8E000F3E863 /* EMPView.cpp in Sources */,
+				F06EBDF118EA72A600F3E863 /* EMPView.cpp in Sources */,
 				89BE6B06173975E500DFE837 /* MOAIEventSource.cpp in Sources */,
 				89BE6B0A173975E500DFE837 /* MOAIFoo.cpp in Sources */,
 				89BE6B0E173975E500DFE837 /* MOAIFooMgr.cpp in Sources */,
@@ -14800,20 +14885,24 @@
 				89BE6B22173975E500DFE837 /* MOAILuaObject.cpp in Sources */,
 				89BE6B26173975E500DFE837 /* MOAILuaRef.cpp in Sources */,
 				89BE6B2A173975E500DFE837 /* MOAILuaRuntime.cpp in Sources */,
+				F02A0B8618EBCAF9001D33B4 /* EMPLabelImpl.mm in Sources */,
 				89BE6B32173975E500DFE837 /* MOAILuaState.cpp in Sources */,
 				89BE6B3A173975E500DFE837 /* MOAIObject.cpp in Sources */,
 				89BE6B3E173975E500DFE837 /* MOAIRtti.cpp in Sources */,
 				89BE6B42173975E500DFE837 /* MOAISerializer.cpp in Sources */,
 				89BE6B46173975E500DFE837 /* MOAISerializerBase.cpp in Sources */,
 				89BE6B4E173975E500DFE837 /* pch.cpp in Sources */,
+				F02A02DF18EBC8FA001D33B4 /* EMPButtonImpl.mm in Sources */,
 				89BE6B571739760900DFE837 /* AKU-audiosampler.cpp in Sources */,
 				89BE6B5B1739760900DFE837 /* MOAIAudioSampler.cpp in Sources */,
 				89BE6BE01739A05600DFE837 /* AKU-iphone.mm in Sources */,
 				89BE6BE61739A05600DFE837 /* MOAIAppIOS.mm in Sources */,
+				F02A02C918EAA039001D33B4 /* EMPComposite.cpp in Sources */,
 				89BE6BE81739A05600DFE837 /* MOAIBillingIOS.mm in Sources */,
 				89BE6BEE1739A05600DFE837 /* MOAIDialogIOS.mm in Sources */,
 				89BE6BF31739A05600DFE837 /* MOAIGameCenterIOS.mm in Sources */,
 				89BE6BF71739A05600DFE837 /* MOAIKeyboardIOS.mm in Sources */,
+				F02A02D118EAA039001D33B4 /* EMPViewImpl.cpp in Sources */,
 				89BE6BFB1739A05600DFE837 /* MOAIMoviePlayerIOS.mm in Sources */,
 				89BE6BFD1739A05600DFE837 /* MOAINotificationsIOS.mm in Sources */,
 				89BE6C011739A05600DFE837 /* MOAIStoreKitListener.mm in Sources */,
@@ -14823,11 +14912,15 @@
 				89BE6C111739A05600DFE837 /* NSArray+MOAILib.mm in Sources */,
 				89BE6C131739A05600DFE837 /* NSData+MOAILib.mm in Sources */,
 				89BE6C151739A05600DFE837 /* NSDate+MOAILib.mm in Sources */,
+				F02A02D718EBB2C3001D33B4 /* EMPViewFactoryIOS.mm in Sources */,
 				89BE6C171739A05600DFE837 /* NSDictionary+MOAILib.mm in Sources */,
 				89BE6C191739A05600DFE837 /* NSError+MOAILib.mm in Sources */,
 				89BE6C1B1739A05600DFE837 /* NSNumber+MOAILib.mm in Sources */,
+				F02A02CB18EAA039001D33B4 /* EMPControl.cpp in Sources */,
 				89BE6C1D1739A05600DFE837 /* NSObject+MOAILib.mm in Sources */,
+				F02A02C718EAA039001D33B4 /* EMPButton.cpp in Sources */,
 				89BE6C1F1739A05600DFE837 /* NSString+MOAILib.mm in Sources */,
+				F02A02CD18EAA039001D33B4 /* EMPDivComposite.cpp in Sources */,
 				89BE6C211739A05600DFE837 /* Reachability.m in Sources */,
 				89BE6C231739A05600DFE837 /* ReachabilityListener.mm in Sources */,
 				89BE6CFC1739A42500DFE837 /* host.cpp in Sources */,
@@ -14840,6 +14933,7 @@
 				89BE6D181739A42500DFE837 /* MOAIJsonParser.cpp in Sources */,
 				89BE6D1C1739A42500DFE837 /* MOAIMath.cpp in Sources */,
 				89BE6D201739A42500DFE837 /* MOAIMemStream.cpp in Sources */,
+				F02A02CF18EAA039001D33B4 /* EMPDocument.cpp in Sources */,
 				89BE6D241739A42500DFE837 /* MOAIMutex.cpp in Sources */,
 				89BE6D281739A42500DFE837 /* MOAIMutex_posix.cpp in Sources */,
 				89BE6D2C1739A42500DFE837 /* MOAIMutex_win32.cpp in Sources */,
@@ -14847,6 +14941,7 @@
 				89BE6D341739A42500DFE837 /* MOAIStream.cpp in Sources */,
 				89BE6D381739A42500DFE837 /* MOAIStreamReader.cpp in Sources */,
 				89BE6D3C1739A42500DFE837 /* MOAIStreamWriter.cpp in Sources */,
+				F02A0B8C18EC5670001D33B4 /* EMPHtmlIOS.mm in Sources */,
 				89BE6D401739A42500DFE837 /* MOAITask.cpp in Sources */,
 				89BE6D441739A42500DFE837 /* MOAITaskQueue.cpp in Sources */,
 				89BE6D481739A42500DFE837 /* MOAITaskSubscriber.cpp in Sources */,
@@ -14859,7 +14954,6 @@
 				89BE6D641739A42500DFE837 /* pch.cpp in Sources */,
 				89E9D7861743F7EE00033CDD /* MOAIVersion.cpp in Sources */,
 				89E9D7A61745223E00033CDD /* MOAIScopedLuaState.cpp in Sources */,
-				F06EBDED18E7D94000F3E863 /* EMPViewFactoryIOS.mm in Sources */,
 				4262463917D234BC0053C0CD /* MOAIBrowserIOS.mm in Sources */,
 				C555156417D6216B00AA324C /* MOAIVecPathGraph.cpp in Sources */,
 			);

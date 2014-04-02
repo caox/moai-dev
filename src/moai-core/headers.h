@@ -13,7 +13,6 @@
 #include <moai-core/MOAILuaRuntime.h>
 #include <moai-core/MOAILuaRef.h>
 
-#include <moai-core/EMPView.h>
 #include <moai-core/MOAIHtmlMgr.h>
 #include <moai-core/MOAICanary.h>
 #include <moai-core/MOAIDeserializer.h>
