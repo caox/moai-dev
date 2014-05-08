@@ -8,11 +8,17 @@
 
 #include "EMPButtonImpl.h"
 
+EMPButtonImpl::EMPButtonImpl(){
+};
+
+EMPButtonImpl::EMPButtonImpl(void* parent){
+	mIOSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    mIOSButton.frame = CGRectMake(221, 81, 54, 30);
+    [mIOSButton setTitle:@"前往" forState:UIControlStateNormal];
+    [(UIView*) parent addSubview:mIOSButton];
+};
 
 void EMPButtonImpl::draw(EMPView* button, void* parentView){
-	mButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    mButton.frame = CGRectMake(221, 81, 54, 30);
-    [mButton setTitle:@"前往" forState:UIControlStateNormal];
-    [(UIView*) parentView addSubview:mButton];
-	button->SetViewImpl(this);
+	
+
 }

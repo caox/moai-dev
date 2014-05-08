@@ -9,9 +9,9 @@
 #import "EMPViewFactoryIOS.h"
 #import "EMPButtonImpl.h"
 
-EMPViewImpl * EMPViewFactoryIOS::createViewImpl(EMPView * view) {
+EMPViewImpl * EMPViewFactoryIOS::createViewImpl(const char* tag, void* host_arg) {
 		
-	EMPButtonImpl * buttonImpl = new EMPButtonImpl();
+	EMPButtonImpl * buttonImpl = new EMPButtonImpl(host_arg);
 	return buttonImpl;
 }
 

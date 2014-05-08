@@ -8,18 +8,23 @@
 
 #include "EMPDocument.h"
 #include <emp-html/EMPButton.h>
+#include <emp-html/EMPDiv.h>
+#include <emp-html/EMPViewFactory.h>
 
 
-void EMPDocument::render(const string& xml, void * rootView){
+void EMPDocument::render(const string& xml, void* host_arg){
 	printf("the xml: %s", xml.c_str());
 	// TODO: parse the xml
 	//		 traverse the DOM
 	//		 generate the view hierarchy
 	
 	// sample code for div and label
-	EMPView * button = new EMPButton();
-	EMPViewImpl * buttonImpl = factory->createViewImpl(button);
-	buttonImpl->draw(button, rootView);
+	
+
+	// if current_doc != NULL release current_doc
+	EMPView * docView = factory-> createViewHierarchy(xml.c_str(), host_arg);
+	
+	current_doc =  docView;
 	
 };
 

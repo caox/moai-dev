@@ -16,6 +16,7 @@
 class EMPViewImpl {
 public:
 	virtual void draw(EMPView *, void *){};
+	virtual void * getRealView(){};
 	virtual ~EMPViewImpl(){};
 };
 #endif /* defined(__libmoai__EMPViewImpl__) */

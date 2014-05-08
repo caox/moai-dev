@@ -14,10 +14,12 @@ int EMPHtmlIOS::test(lua_State* L ){
 	UIWindow* window = [[ UIApplication sharedApplication ] keyWindow ];
 	UIViewController* rootVC = [ window rootViewController ];
 	
+	UIView* doc = [[UIView alloc] init];
 	
 	printf ( "EMP factory singleton foo!\n" );
-	string xml = "<div><label> this is a test</label></div>";
-	EMPDocument::Get().render(xml, (void *) rootVC.view);
+	string xml = "<div><button> this is a test</button></div><div>ppp</div>";
+	EMPDocument::Get().render(xml, (void*)doc);
+	[rootVC.view addSubview: doc];
 	
 	return 0;
 }

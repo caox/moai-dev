@@ -14,6 +14,15 @@
 
 
 class EMPButton:public EMPView{
+public:
+	EMPButton(){printf("init button\n");}
+	~EMPButton(){printf("release button\n");}
+	static EMPView* CreateInstance(){
+		return new EMPButton();
+	}
 	
+private:
+	DECLARE_RUNTIME(EMPButton)
 };
+
 #endif /* defined(__libmoai__EMPButton__) */

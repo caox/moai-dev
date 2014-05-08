@@ -22,6 +22,8 @@
 #import <moai-audiosampler/AKU-audiosampler.h>
 #import <lua-headers/moai_lua.h>
 
+#import <emp-iphone/host.h>
+
 #if MOAI_WITH_BOX2D
 	#include <moai-box2d/host.h>
 #endif
@@ -189,6 +191,7 @@ namespace MoaiInputDeviceSensorID {
 		AKUExtLoadLuacrypto ();
 		AKUExtLoadLuasocket ();
 		
+        AKUInitializeEMPHtml ();
         #if MOAI_WITH_BOX2D
 		AKUInitializeBox2D ();
         #endif

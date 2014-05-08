@@ -2,9 +2,6 @@
 // http://getmoai.com
 
 
-#import <emp-iphone/EMPHtmlIOS.h>
-#import <emp-html/EMPDocument.h>
-
 #import <moai-iphone/MOAIAdColonyIOS.h>
 #import <moai-iphone/MOAIAppIOS.h>
 #import <moai-iphone/MOAIBillingIOS.h>

@@ -9,6 +9,12 @@
 #ifndef __libmoai__EMPDivComposite__
 #define __libmoai__EMPDivComposite__
 
-#include <iostream>
+#include <emp-html/EMPView.h>
+
+class EMPDiv: public EMPView{
+public:
+	EMPDiv(){ setViewType(EMPView::Container);};
+	
+};
 
 #endif /* defined(__libmoai__EMPDivComposite__) */

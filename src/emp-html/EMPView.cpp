@@ -7,15 +7,20 @@
 //
 
 
-#include "EMPView.h"
+#include <emp-html/EMPView.h>
 #include <emp-html/EMPViewImpl.h>
 
+EMPView::EMPView(ViewType t){
+	type = t;
+}
 
 void EMPView::setViewType(ViewType t){
 	this->type = t;
 };
 
-
+void EMPView::addSubView(EMPView* view){
+	child.push_back(view);
+}
 
 int EMPView::_getCssStyles ( lua_State* L ) {
 	UNUSED ( L );
@@ -31,6 +36,10 @@ int EMPView::_getCssStyleByName ( lua_State* L ) {
 	printf ( "MOAIHtmlMgr singleton foo!\n" );
 	
 	return 0;
+}
+
+void * EMPView::getRealView(){
+	return mViewImpl->getRealView();
 }
 
 

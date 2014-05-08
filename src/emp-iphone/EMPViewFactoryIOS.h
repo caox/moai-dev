@@ -11,7 +11,7 @@
 #import <emp-html/headers.h>
 
 
-class EMPViewFactoryIOS:public EMPViewFactory {
+class EMPViewFactoryIOS:public virtual EMPViewFactory {
 private:
 	
 public:
@@ -19,7 +19,7 @@ public:
 	//----------------------------------------------------------------//
 	EMPViewFactoryIOS			(){};
 	~EMPViewFactoryIOS			(){};
-	EMPViewImpl* createViewImpl(EMPView*);
+	EMPViewImpl* createViewImpl(const char* tag, void* host_arg);
 	
 };
 

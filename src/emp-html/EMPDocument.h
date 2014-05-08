@@ -13,8 +13,9 @@
 #include <moai-core/headers.h>
 #include <string>
 #include <emp-html/EMPView.h>
-#include <emp-html/EMPViewFactory.h>
 
+
+class EMPViewFactory;
 using namespace std;
 
 class EMPDocument:public MOAIGlobalClass < EMPDocument, MOAILuaObject >{
@@ -23,11 +24,13 @@ public:
 	
 	DECL_LUA_SINGLETON ( EMPDocument )
 	SET ( EMPViewFactory*, Factory, factory )
+	SET ( EMPView*, Document, current_doc )
 	GET ( EMPViewFactory*, Factory, factory )
 	void			RegisterLuaClass	( MOAILuaState& state );
 private:
+
 	
-	EMPView * root;
+	EMPView * current_doc;
 	EMPViewFactory * factory;
 	static int		_getElementByName		( lua_State* L );
 };

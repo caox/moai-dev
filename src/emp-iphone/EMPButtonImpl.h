@@ -16,10 +16,14 @@
 
 class EMPButtonImpl:public EMPViewImpl{
 public:
+	
+	EMPButtonImpl();
+	EMPButtonImpl(void* parent);
 	void draw(EMPView*, void *);
+	void * getRealView(){return (void*) mIOSButton;}
 	~EMPButtonImpl(){};
 private:
-	UIButton * mButton;
+	UIButton * mIOSButton;
 };
 
 #endif /* defined(__libmoai__EMPButtonImpl__) */
