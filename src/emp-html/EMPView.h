@@ -20,7 +20,8 @@ class EMPViewImpl;
 /*@定义宏,类通过包含该宏,实现动态创建*/
 #define DECLARE_RUNTIME(class_name)\
 string class_name##Name;\
-static GenDynamic* class_name##gd;
+static GenDynamic* class_name##gd; \
+static EMPView* CreateInstance(){return new class_name();}
 
 /*@宏实现,类通过实现该宏,实现动态创建*/
 #define IMPLEMENT_RUNTIME(name, class_name)\

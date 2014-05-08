@@ -17,7 +17,7 @@ int EMPHtmlIOS::test(lua_State* L ){
 	UIView* doc = [[UIView alloc] init];
 	
 	printf ( "EMP factory singleton foo!\n" );
-	string xml = "<div><button> this is a test</button></div><div>ppp</div>";
+	string xml = "<button> this is a test</button>";
 	EMPDocument::Get().render(xml, (void*)doc);
 	[rootVC.view addSubview: doc];
 	

@@ -8,4 +8,3 @@
 
 #include "EMPButton.h"
 
-IMPLEMENT_RUNTIME(button, EMPButton)

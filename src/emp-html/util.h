@@ -9,6 +9,7 @@
 #ifndef libmoai_util_h
 #define libmoai_util_h
 #include <ext/hash_map>
+#include <tinyxml.h>
 using namespace std;
 using namespace __gnu_cxx;
 
@@ -23,5 +24,6 @@ namespace __gnu_cxx {
 }
 
 typedef hash_map<string, string> attribute_map;
+
 
 #endif

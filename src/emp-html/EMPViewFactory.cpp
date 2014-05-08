@@ -8,6 +8,8 @@
 
 #include "EMPViewFactory.h"
 #include "EMPDiv.h"
+
+#include "EMPButton.h"
 #include <strings.h>
 #include <string>
 #include <emp-html/EMPView.h>
@@ -17,6 +19,10 @@ using namespace std;
 
 classMap EMPViewFactory::mClassMap;
 
+
+// XXX: The including of init.h must be placed after mClassMap's initialization,
+//      otherwise the registeration will be discarded.
+#include "init.h"
 
 // ----------------------------------------------------------------------
 // STDOUT dump and indenting utility functions
@@ -120,6 +126,7 @@ void dump_to_stdout( TiXmlNode* node, unsigned int indent = 0 )
 	}
 }
 
+
 void EMPViewFactory::createViewElement(TiXmlNode* node, EMPView* parentView, void* host_arg){
 	
 	if ( !node ) return;
@@ -128,17 +135,19 @@ void EMPViewFactory::createViewElement(TiXmlNode* node, EMPView* parentView, voi
 		const char* name = node->Value();
 		printf("element : %s \n", name);
 		EMPView* viewElement = initView(name, node->ToElement(), host_arg);
-		parentView->addSubView(viewElement);
-		if (viewElement->isContainer()) {
-			/* TODO We need change the host_arg of the container.
-					As for iOS, it could be the pointer of UIView of
-					the container.
-			*/
-			createViewElement(node->FirstChild(), parentView, host_arg);
+		if (NULL != viewElement){
+			parentView->addSubView(viewElement);
+			if (viewElement->isContainer()) {
+				/* TODO We need change the host_arg of the container.
+				 As for iOS, it could be the pointer of UIView of
+				 the container.
+				 */
+				createViewElement(node->FirstChild(), parentView, host_arg);
+			}
 		}
 	}
 	createViewElement(node->NextSibling(), parentView, host_arg);
-
+	
 }
 
 EMPView* EMPViewFactory::createViewHierarchy(const char* xml, void* host_arg){
@@ -172,22 +181,12 @@ attribute_map* EMPViewFactory::dumpAttributeToMap(TiXmlElement* node){
 
 EMPView* EMPViewFactory::initView(const char* name, TiXmlElement* node, void* host_arg){
 	EMPView* view = EMPViewFactory::GetClassByName(name);
-	if (NULL!=view) delete view;
-	printf("=====name : %s and res :%d ", name, strcmp(name, "div"));
-	if (0 == strcmp(name, "div")){
-		view=  new EMPDiv();
+	if (NULL!= view) {
 		attribute_map* map = dumpAttributeToMap(node);
 		EMPViewImpl* impl = createViewImpl(name, host_arg);
 		view->setAttributeMap(map);
 		view->SetViewImpl(impl);
-		}
-//	else if (0 == strcmp(name, "button")){
-//		view =  new EMPButton();
-//		attribute_map* map = dumpAttributeToMap(node);
-//		EMPViewImpl* impl = createViewImpl(name, host_arg);
-//		view->setAttributeMap(map);
-//		view->SetViewImpl(impl);
-//	}
+	}
 	return view;
 }
 

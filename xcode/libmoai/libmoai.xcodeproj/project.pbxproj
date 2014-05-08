@@ -3935,6 +3935,7 @@
 		F06EBDF418EA72D600F3E863 /* headers.h in Headers */ = {isa = PBXBuildFile; fileRef = F06EBDF318EA72D600F3E863 /* headers.h */; };
 		F0858F6A191A0EAF008FE8B9 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = F0858F69191A0EAF008FE8B9 /* util.h */; };
 		F0858F6C191A0F24008FE8B9 /* EMPViewFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0858F6B191A0F24008FE8B9 /* EMPViewFactory.cpp */; };
+		F0858F6F191B4024008FE8B9 /* init.h in Headers */ = {isa = PBXBuildFile; fileRef = F0858F6E191B4024008FE8B9 /* init.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -6574,6 +6575,7 @@
 		F06EBDF318EA72D600F3E863 /* headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = headers.h; path = "emp-html/headers.h"; sourceTree = "<group>"; };
 		F0858F69191A0EAF008FE8B9 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = "emp-html/util.h"; sourceTree = "<group>"; };
 		F0858F6B191A0F24008FE8B9 /* EMPViewFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMPViewFactory.cpp; path = "emp-html/EMPViewFactory.cpp"; sourceTree = "<group>"; };
+		F0858F6E191B4024008FE8B9 /* init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = init.h; path = "emp-html/init.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -10775,6 +10777,7 @@
 				F02A02D218EAA1FD001D33B4 /* EMPViewImpl.h */,
 				F06EBDF318EA72D600F3E863 /* headers.h */,
 				F0858F69191A0EAF008FE8B9 /* util.h */,
+				F0858F6E191B4024008FE8B9 /* init.h */,
 			);
 			name = "emp-html";
 			sourceTree = "<group>";
@@ -11604,6 +11607,7 @@
 				89BE6B4C173975E500DFE837 /* MOAIWeakPtr.h in Headers */,
 				89BE6B50173975E500DFE837 /* pch.h in Headers */,
 				89BE6B591739760900DFE837 /* AKU-audiosampler.h in Headers */,
+				F0858F6F191B4024008FE8B9 /* init.h in Headers */,
 				89BE6B5D1739760900DFE837 /* MOAIAudioSampler.h in Headers */,
 				89BE6BDF1739A05600DFE837 /* AKU-iphone.h in Headers */,
 				89BE6BE51739A05600DFE837 /* MOAIAppIOS.h in Headers */,
