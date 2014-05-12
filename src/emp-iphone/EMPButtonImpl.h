@@ -13,17 +13,35 @@
 #include <emp-html/EMPViewImpl.h>
 #include <emp-html/EMPView.h>
 #import <UIKit/UIKit.h>
+#include <moai-core/host.h>
+
+
+@interface EMPIOSButton:UIResponder{
+	UIButton* button;
+	NSString* onClick;
+}
+
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+//- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+//- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+//- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+
+@property (nonatomic, retain) UIButton *button;
+@property (nonatomic, copy) NSString *onClick;
+@end
 
 class EMPButtonImpl:public EMPViewImpl{
 public:
 	
 	EMPButtonImpl();
 	EMPButtonImpl(void* parent);
-	void draw(EMPView*, void *);
-	void * getRealView(){return (void*) mIOSButton;}
+	void draw(EMPView*);
+	void* getRealView(){return (void*) mButton;}
 	~EMPButtonImpl(){};
 private:
-	UIButton * mIOSButton;
+	EMPIOSButton * mButton;
 };
+
+
 
 #endif /* defined(__libmoai__EMPButtonImpl__) */

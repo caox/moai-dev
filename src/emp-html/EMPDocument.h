@@ -21,17 +21,17 @@ using namespace std;
 class EMPDocument:public MOAIGlobalClass < EMPDocument, MOAILuaObject >{
 public:
 	void render(const string&, void *);
-	
 	DECL_LUA_SINGLETON ( EMPDocument )
 	SET ( EMPViewFactory*, Factory, factory )
-	SET ( EMPView*, Document, current_doc )
+	SET ( EMPView*, Document, currentDoc )
 	GET ( EMPViewFactory*, Factory, factory )
 	void			RegisterLuaClass	( MOAILuaState& state );
 private:
 
 	
-	EMPView * current_doc;
+	static EMPView * currentDoc;
 	EMPViewFactory * factory;
+	static int		_setElementLayout		( lua_State* L );
 	static int		_getElementByName		( lua_State* L );
 };
 

@@ -19,9 +19,27 @@ void EMPView::setViewType(ViewType t){
 };
 
 void EMPView::addSubView(EMPView* view){
+	if(NULL!= view)
 	child.push_back(view);
 }
 
+void EMPView::layoutSubView(){
+	list<EMPView*>::iterator iter;
+	layout init = {80, 80, 50, 30};
+	for(iter=child.begin(); iter!= child.end(); ++iter){
+		EMPView* view = (*iter);
+		view->setLayout(init);
+	}
+}
+
+void EMPView::setLayout(layout l) {
+	mLayout = l;
+	mViewImpl->draw(this);
+}
+
+EMPView*  EMPView::getFirstChild() const{
+	return child.front();
+}
 int EMPView::_getCssStyles ( lua_State* L ) {
 	UNUSED ( L );
 	

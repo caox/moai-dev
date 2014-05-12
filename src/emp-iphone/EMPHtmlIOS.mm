@@ -10,16 +10,16 @@
 
 
 int EMPHtmlIOS::test(lua_State* L ){
-	UNUSED ( L );
+	MOAILuaState state ( L );
+	cc8* xml = state.GetValue < cc8* >( 2, "" );
+	printf ( "the lua str : %s!\n", xml);
 	UIWindow* window = [[ UIApplication sharedApplication ] keyWindow ];
 	UIViewController* rootVC = [ window rootViewController ];
 	
-	UIView* doc = [[UIView alloc] init];
-	
-	printf ( "EMP factory singleton foo!\n" );
-	string xml = "<button> this is a test</button>";
-	EMPDocument::Get().render(xml, (void*)doc);
-	[rootVC.view addSubview: doc];
+	// Fixme: don't know why doc view make subview can't handle the touch event
+	// UIView* doc = [[UIView alloc] init];
+	EMPDocument::Get().render(xml, (void*)(rootVC.view));
+	//[window addSubview: doc];
 	
 	return 0;
 }

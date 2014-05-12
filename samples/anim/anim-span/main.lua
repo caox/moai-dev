@@ -4,6 +4,10 @@
 -- http://getmoai.com
 ----------------------------------------------------------------
 
+function reset()
+   EMPDocument:reset(100,100,50,50)
+end
+
 MOAISim.openWindow ( "test", 320, 480 )
 
 viewport = MOAIViewport.new ()
@@ -23,7 +27,8 @@ prop = MOAIProp2D.new ()
 prop:setDeck ( tileLib )
 layer:insertProp ( prop )
 
-EMPHtmlIOS:render()
+EMPHtmlIOS:render("<button onclick='reset()'> this is a test</button>")
+
 curve = MOAIAnimCurve.new ()
 
 curve:reserveKeys ( 9 )

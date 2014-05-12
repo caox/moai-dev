@@ -6,7 +6,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import <OpenGLES/EAGLDrawable.h>
-
+#include <iostream>
 //extern "C" {
 //	#include <lua.h>
 //	#include <lauxlib.h>
@@ -130,7 +130,7 @@ namespace MoaiInputDeviceSensorID {
 
 	//----------------------------------------------------------------//
 	-( void ) handleTouches :( NSSet* )touches :( BOOL )down {
-	
+        printf("touch===============\n");
 		for ( UITouch* touch in touches ) {
 			
 			CGPoint p = [ touch locationInView:self ];

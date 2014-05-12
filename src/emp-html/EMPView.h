@@ -28,6 +28,13 @@ static EMPView* CreateInstance(){return new class_name();}
 GenDynamic* class_name::class_name##gd\
 = new GenDynamic(#name,class_name::CreateInstance);
 
+typedef struct Layout {
+	float x;
+	float y;
+	float width;
+	float higth;
+} layout;
+
 class EMPView: public MOAIGlobalClass < EMPView, MOAILuaObject > {
 	
 public:
@@ -37,31 +44,28 @@ public:
 		Leaf
 	};
 	
-	struct Layout {
-		float x;
-		float y;
-		float width;
-		float higth;
-	} ;
+	
 	EMPView(){printf("new emp view\n");}
 	EMPView(ViewType t);
 	~EMPView(){printf("release emp view\n");}
 	void addSubView(EMPView *);
 	void * getRealView();
-	void setLayout(Layout);
 	void setViewType(ViewType);
 	void setParent(EMPView *);
+	void setLayout(layout);
 	void setAttributeMap(attribute_map* m) {map = m;}
 	std::list<EMPView *> getChild() const;
-	EMPView * getParent() const ;
+	EMPView* getParent() const ;
+	EMPView* getFirstChild() const;
 	ViewType getViewType() const {return type;}
-	Layout getLayout() const {return layout;}
-	void draw();
+	layout getLayout() const {return mLayout;}
+	void layoutSubView(); // layout subviews
 	bool isContainer(){return type == Container;}
 	
 	DECL_LUA_FACTORY ( EMPView )
+	GET(EMPViewImpl*, ViewImpl, mViewImpl)
 	SET(EMPViewImpl*, ViewImpl, mViewImpl)
-	
+	GET(attribute_map*, AttrMap, map)
 	void			RegisterLuaFuncs	( MOAILuaState& state );
 
 	
@@ -72,10 +76,10 @@ private:
 	float width;
 	float higth;
 	ViewType type;
-	Layout layout;
+	Layout mLayout;
 	attribute_map* map;
 	std::list<EMPView *> child;
-	EMPViewImpl * mViewImpl;
+	EMPViewImpl * mViewImpl = NULL;
 	
 	static int		_getCssStyles		( lua_State* L );
 	static int      _getCssStyleByName  ( lua_State* L );

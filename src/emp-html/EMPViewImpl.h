@@ -15,7 +15,7 @@
 
 class EMPViewImpl {
 public:
-	virtual void draw(EMPView *, void *){};
+	virtual void draw(EMPView*){};
 	virtual void * getRealView(){};
 	virtual ~EMPViewImpl(){};
 };
